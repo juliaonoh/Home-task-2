@@ -2,10 +2,10 @@
 минимальное значение значения в массиве.
 
 # Home-task-2
-public static void main(String[] args) {
-        int [] array = {19,16,14,8,13, -14, -15};
+ public class Array{
+int [] array = {12,1,5,7,13,-14,-15};
         int max = array[0], min = array[0];
-        for(int i = 0; i<array.length; i++){
+        for(int i = 0; i<array; i++){
             if(max<array[i])
                 max = array[i];
             if(min>array[i])
@@ -14,3 +14,28 @@ public static void main(String[] args) {
         System.out.println("Max: "+max);
         System.out.println("Min:"+min);
     }
+}
+
+2)Написать программу, которая принимает стоимость покупок
+в магазине и выдаёт сумму к оплате с учётом следующей
+скидки:
+- 0 – 500: нет скидки
+- 501 – 1000: cкидка 10%
+- 1001 – 2000: скидка 15%
+- 2001 и более: скидка 20%
+
+
+# Home-task-2 Супер кривая программа
+public class Summa{
+public static void main(String[] args){
+int summa;
+        if (summa>=2001) summa-summa(100*20);
+        System.out.println ("You have 20% discount");
+        else if (summa>=1001) summa-summa(100*15);
+        System.out.println ("You have 15% discount");
+        if (summa>=501) summa-summa(100*10);
+        System.out.println ("You have 10% discount");
+        else System.out.println ("You have not discount");
+    }
+}
+
