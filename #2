@@ -1,0 +1,16 @@
+1)Написать программу, которая определяет максимальное и
+минимальное значение значения в массиве.
+
+# Home-task-2
+public static void main(String[] args) {
+        int [] array = {19,16,14,8,13, -14, -15};
+        int max = array[0], min = array[0];
+        for(int i = 0; i<array.length; i++){
+            if(max<array[i])
+                max = array[i];
+            if(min>array[i])
+                min = array[i];
+        }
+        System.out.println("Max: "+max);
+        System.out.println("Min:"+min);
+    }
