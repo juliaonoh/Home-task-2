@@ -31,8 +31,10 @@ public static void main(String[] args){
 int summa;
         if (summa>=2001) summa-summa(100*20);
         System.out.println ("You have 20% discount");
+        return;
         else if (summa>=1001) summa-summa(100*15);
         System.out.println ("You have 15% discount");
+        return;
         if (summa>=501) summa-summa(100*10);
         System.out.println ("You have 10% discount");
         else System.out.println ("You have not discount");
